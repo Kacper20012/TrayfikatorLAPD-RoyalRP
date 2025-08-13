@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Taryfikator LAPD</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <h1>Taryfikator LAPD</h1>
+    <div class="top-search">
+      <input id="search" placeholder="Wyszukaj wykroczenie..." />
+    </div>
+  </header>
+
+  <!-- Panel kategorii -->
+  <div class="panel">
+    <h3>Kategorie</h3>
+    <div class="categories" id="categoriesList"></div>
+
+    <div class="summary-mini">
+      <div class="left">
+        Wybrane: <span id="selCount">0</span> &nbsp; • &nbsp; Grzywna: $<span id="selFine">0</span> &nbsp; • &nbsp; Więzienie: <span id="selTime">0 mies.</span>
+      </div>
+      <div class="right">
+        <button class="btn-green" id="btnSummary">Podsumowanie</button>
+        <button class="btn-gray" id="btnClear">Wyczyść</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="cards" id="cardsContainer"></div>
+
+  <!-- Totals -->
+  <div class="totals">
+    <div class="box">
+      <h5>Wybrane wykroczenia</h5>
+      <p id="totalCount">0</p>
+    </div>
+    <div class="box">
+      <h5>Łączna grzywna</h5>
+      <p>$<span id="totalFine">0</span></p>
+    </div>
+    <div class="box">
+      <h5>Łączny czas więzienia</h5>
+      <p><span id="totalMonths">0</span> mies.</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
